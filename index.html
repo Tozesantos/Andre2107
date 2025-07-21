@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TÓPICOS DA SEMANA</title>
+
+  <!-- Bootstrap 4.6.0 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Bootstrap Select CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.14/css/bootstrap-select.min.css">
+
+  <!-- Flag Icon CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #ad95e298;
+      color: #2d2d2d;
+      text-align: center;
+    }
+    .container {
+      max-width: 500px;
+      padding: 20px 10px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .social-icons {
+      margin-bottom: 10px;
+    }
+    .social-icons a {
+      color: #ae95e2;
+      font-size: 24px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .social-icons a:hover {
+      color: #9777dd;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn-safe {
+      background-color: #ae95e2;
+      color: white;
+    }
+    .btn-safe:hover {
+      background-color: #9777dd;
+    }
+    .btn-mistery {
+      background-color: #ae95e2;
+      padding: 4px 10px;
+      color: #222;
+    }
+    .btn-mistery:hover {
+      background-color: #9777dd;
+    }
+    .carousel-inner img {
+      width: 300px;
+      height: 400px;
+      object-fit: cover;
+      margin: auto;
+    }
+    .carousel {
+      max-width: 320px;
+      margin: auto;
+    }
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header {
+      background-color: #ae95e2;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      text-align: center;
+      flex: 1;
+    }
+    .search-container {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .search-container input[type="text"] {
+      padding: 5px 8px;
+      font-size: 16px;
+      border: none;
+      border-radius: 3px 0 0 3px;
+      outline: none;
+    }
+    .search-container button {
+      padding: 6px 10px;
+      font-size: 16px;
+      border: none;
+      background-color: #ae95e2;
+      color: white;
+      border-radius: 0 3px 3px 0;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>André Costa</h1>
+    <div class="search-container">
+      <button id="btnSearch"><i class="fas fa-search"></i></button>
+
+      <select class="selectpicker"
+          id="country-select"
+          data-width="75px"
+          data-style="btn-sm btn-light"
+          data-show-icon="true">
+    <option data-icon="flag-icon flag-icon-us" value="us"></option>
+    <option data-icon="flag-icon flag-icon-pt" value="pt" selected></option>
+    <option data-icon="flag-icon flag-icon-br" value="br"></option>
+    <option data-icon="flag-icon flag-icon-fr" value="fr"></option>
+  </select>
+    </div>
+  </header>
+
+
+</div>
+
+  </div>
+
+  <div class="container">
+    <div id="meuCarrossel" class="carousel slide" data-ride="carousel" data-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="IMG_0602.JPG" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="IMG_0623.JPG" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="IMG_0652.JPG" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="IMG_0704.JPG" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="IMG_9595.JPG" class="d-block w-100">
+        </div>
+      </div>
+
+    </div>
+
+    <h5>Conhece aqui o que eu abordo nos storys</h5>
+    <p>Vagabas vejam aquilo que eu falei  nos storys</p>
+
+    <div class="social-icons">
+      <a href="https://www.instagram.com/andrefrcosta/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@andrefrcostaa" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="mailto:andrefilipereiscosta@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.youtube.com/@poddescendodosalto" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <div class="center-container">
+      <a href="https://lgamigust.com/JlyVJ" target="_blank" id="btnGalinha" class="btn btn-mistery" style="width: 300px; text-align: center;">
+        <i class="fas fa-drumstick-bite"></i> 
+        <span id="btnGalinhaText">Acesso direto</span>
+      </a>
+    </div>
+
+    <p>Qualquer dúvida, mandem mensagem sem medo!</p>
+  </div>
+
+  <!-- Scripts no fim do body -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.14/js/bootstrap-select.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#country-select').selectpicker();
+    });
+   $(document).ready(function() {
+  $('#country-select').selectpicker();
+
+  $('#country-select').on('changed.bs.select', function (e, clickedIndex, isSelected, previousValue) {
+    const lang = $(this).val();
+  const texts = {
+  pt: {
+    title: "TÓPICOS DA SEMANA",
+    subtitle: "Conhece aqui o que eu abordo nos storys",
+    paragraph: "Vagabas, vejam aquilo que eu falei nos storys",
+    help: "Qualquer dúvida, mandem mensagem sem medo!",
+    btnApply: "Quero saber mais",
+    btnGalinha: "Acesso direto"
+  },
+  us: {
+    title: "WEEKLY TOPICS",
+    subtitle: "Check out what I’ve been talking about in my stories",
+    paragraph: "Vagabas, take a look at what I’ve shared in the stories",
+    help: "Got questions? Just send me a message!",
+    btnApply: "Tell me more",
+    btnGalinha: "Direct access"
+  },
+  br: {
+    title: "TÓPICOS DA SEMANA",
+    subtitle: "Veja aqui o que falei nos stories",
+    paragraph: "Vagabas, confiram o que andei falando nos stories",
+    help: "Qualquer dúvida, me chama no direct sem medo!",
+    btnApply: "Quero saber mais",
+    btnGalinha: "Acesso direto"
+  },
+  fr: {
+    title: "SUJETS DE LA SEMAINE",
+    subtitle: "Découvre ici ce que j’ai partagé en story",
+    paragraph: "Les vagabondes, regardez ce dont j’ai parlé en story",
+    help: "Si vous avez des questions, n’hésitez pas à m’envoyer un message !",
+    btnApply: "Je veux en savoir plus",
+    btnGalinha: "Accès direct"
+  }
+};
+    if (texts[lang]) {
+
+      $('h4').text(texts[lang].subtitle);
+      $('p').first().text(texts[lang].paragraph);
+      $('.container p').last().text(texts[lang].help);
+      $('#btnGalinhaText').text(texts[lang].btnGalinha);
+    }
+  });
+});
+  $(document).ready(function () {
+    $('#btnSearch').on('click', function () {
+      alert("Vai ao ChatGPT e deixa a mamacitia beber a sua margarita! 😅");
+    });
+  });
+  </script>
+</body>
+</html>
